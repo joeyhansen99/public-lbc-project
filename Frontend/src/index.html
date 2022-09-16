@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="songRecommenderPage.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body class="background">
+    <header class="header" id="header">
+        <div class="site-title">
+            <a class="header_home" href="index.html">Song Recommender</a>
+        </div>
+        <div>
+            <a href="songCustomizer.html">Song customization page</a>
+        </div>
+    </header>
+    <div class="card">
+        <h2>Create Sample List</h2>
+        <form class="card-content" id="create-sample-song-form">
+            <button type="submit">Create List</button>
+        </form>
+    </div>
+    <div class="card">
+        <h2>Enter video length:</h2>
+        <form class="card-content" id="get-random-song-form">
+            <p class="form-field">
+                <label>Video Length</label>
+                <input type="text" required class="validated-field" id="get-random-song-field">
+            </p>
+            <button type="submit">Get Random Songs</button>
+        </form>
+    </div>
+    <div class="card" id="update">
+        <h2>Songs:</h2>
+        <p id="songArea"></p>
+    </div>
+</body>
+</html>
